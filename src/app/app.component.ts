@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { WelcomeComponent } from './shared/welcome.component';
 
 @Component({
   selector: 'app-root',
