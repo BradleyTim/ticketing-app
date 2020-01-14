@@ -1,0 +1,9 @@
+<section class="ticket-container" *ngIf="tickets.length > 0">
+  <div
+    [routerLink]="['/tickets', ticket.id]"
+    class="ticket"
+    *ngFor="let ticket of tickets"
+  >
+    <h3 class="title">{{ ticket.name }}</h3>
+  </div>
+</section>
