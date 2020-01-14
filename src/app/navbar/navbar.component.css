@@ -1,0 +1,21 @@
+header {
+    color: red;
+    /* height: 20%; */
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+header nav {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header h2 {
+    font-size: 2rem;
+}
+
+header a {
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+}
