@@ -9,7 +9,7 @@ export class TicketsService {
     return [
       {
         id: 1,
-        name: 'name',
+        name: 'ticket one',
         email: 'example@email.com',
         phone: '55555555',
         priority: 'high',
@@ -20,7 +20,7 @@ export class TicketsService {
       },
       {
         id: 2,
-        name: 'name',
+        name: 'ticket two',
         email: 'example@email.com',
         phone: '55555555',
         priority: 'high',
@@ -31,7 +31,7 @@ export class TicketsService {
       },
       {
         id: 2,
-        name: 'name',
+        name: 'ticket three',
         email: 'example@email.com',
         phone: '55555555',
         priority: 'high',

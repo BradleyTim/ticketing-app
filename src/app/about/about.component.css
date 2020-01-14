@@ -1,0 +1,16 @@
+section {
+  padding: 1rem;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section div h3 {
+  font-size: 1.75rem;
+  margin-bottom: .75rem;
+}
+
+section div p {
+  font-size: 1.5rem;
+}

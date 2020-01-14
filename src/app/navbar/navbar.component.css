@@ -44,6 +44,6 @@ header ul li a {
   cursor: pointer;
 }
 
-header nav .active {
+/* header nav .active-link {
   color: darkred;
-}
+} */

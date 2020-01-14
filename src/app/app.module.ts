@@ -4,23 +4,28 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 import { AppComponent } from './app.component';
-import { WelcomeComponent } from './shared/welcome.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { TicketsComponent } from './tickets/tickets.component';
+import { LandingpageComponent } from './landingpage/landingpage.component';
+import { AboutComponent } from './about/about.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 const appRoutes: Routes = [
   { path: 'ticket/:id', component: TicketsComponent },
   {path: 'tickets', component: TicketsComponent },
-  {path: '', component: WelcomeComponent},
-  { path: '**', redirectTo: '', pathMatch: 'full' }
+  {path: 'about', component: AboutComponent },
+  {path: '', component: LandingpageComponent},
+  { path: '**', component: PagenotfoundComponent }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    WelcomeComponent,
     NavbarComponent,
-    TicketsComponent
+    TicketsComponent,
+    LandingpageComponent,
+    AboutComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
