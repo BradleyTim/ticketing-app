@@ -5,9 +5,12 @@ section {
 
 section div {
     width: 100%;
-    padding: .5rem 0;
+    padding: .25rem 0;
     text-align: left;
-    border: .5px solid #444;
+    border: .5px solid rgb(230, 226, 226);
+    border-radius: 4px;
+    background-color: rgb(243, 240, 240);
+    margin-bottom: .35rem;
 }
 
 section h3 {

@@ -1,0 +1,57 @@
+.detail-page {
+    height: 100%;
+    width: 100%;
+}
+
+.detail-container {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    margin-top: 4rem;
+    width: 50%;
+    padding: 2rem;
+    background-color: #ccc;
+}
+
+.buttons-container {
+    margin-top: 1rem;
+    width: 50%;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: .5rem 2rem;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .5s ease-in;
+}
+
+.back {
+    border: 1px solid #000;
+}
+
+.back:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.edit {
+    border: 1px solid skyblue;
+}
+
+.edit:hover {
+    color: #fff;
+    background-color: skyblue;
+}
+
+.close {
+    border: 1px solid lightcoral;
+}
+
+.close:hover {
+  color: #fff;
+  background-color: lightcoral;
+}

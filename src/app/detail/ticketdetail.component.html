@@ -1,0 +1,18 @@
+<section class="detail-page">
+  <div class="detail-container">
+    <h4> {{ticket.name}}</h4>
+    <p><strong>Email:</strong> {{ticket.email}}</p>
+    <p><strong>Phone:</strong> {{ticket.phone}}</p>
+    <p><strong>Priority:</strong> {{ticket.priority}}</p>
+    <p><strong>Subject:</strong> {{ticket.subject}}</p>
+    <p><strong>Description:</strong> {{ticket.description}}</p>
+    <p><strong>Department:</strong> {{ticket.department}}</p>
+    <p><strong>Created by:</strong> {{ticket.createdBy}}</p>
+  </div>
+
+  <div class="buttons-container">
+    <button class="back" (click)="onBack()">Back</button>
+    <button class="edit">Edit</button>
+    <button class="close">Close</button>
+  </div>
+</section>

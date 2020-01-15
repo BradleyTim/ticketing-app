@@ -9,9 +9,10 @@ import { TicketsComponent } from './tickets/tickets.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { AboutComponent } from './about/about.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { TicketdetailComponent } from './detail/ticketdetail.component';
 
 const appRoutes: Routes = [
-  { path: 'ticket/:id', component: TicketsComponent },
+  { path: 'tickets/:id', component: TicketdetailComponent },
   {path: 'tickets', component: TicketsComponent },
   {path: 'about', component: AboutComponent },
   {path: '', component: LandingpageComponent},
@@ -25,7 +26,8 @@ const appRoutes: Routes = [
     TicketsComponent,
     LandingpageComponent,
     AboutComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    TicketdetailComponent
   ],
   imports: [
     BrowserModule,
