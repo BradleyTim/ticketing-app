@@ -1,9 +1,11 @@
 section {
   padding: 1rem;
-  height: 50vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 section div h3 {
@@ -12,5 +14,5 @@ section div h3 {
 }
 
 section div p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }

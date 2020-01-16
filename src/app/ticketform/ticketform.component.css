@@ -1,0 +1,29 @@
+.form-container {
+    width: 100%;
+}
+
+.form-container input, 
+.form-container select {
+    display: block;
+    width: 90%;
+    padding: .75rem;
+    border: 1px solid #777;
+    border-radius: 4px;
+    margin: .5rem 0;
+}
+
+label {
+    font-weight: bold;
+}
+
+button {
+    display: block;
+    width: 30%;
+    padding: .75rem 1rem;
+    border: 1px solid #777;
+    border-radius: 4px;
+    margin: .5rem 0 1.5rem 0;
+    text-align: center;
+    color: white;
+    background-color: #000;
+}

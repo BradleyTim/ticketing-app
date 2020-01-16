@@ -1,0 +1,40 @@
+<section class="form-container">
+  <h1>Create a Ticket</h1>
+  <form #ticketForm="ngForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input class="form-control" type="text" name="name" id="name" [(ngModel)]="ticket.name">
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input class="form-control" type="text" name="email" id="email" [(ngModel)]="ticket.email">
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone</label>
+      <input class="form-control" type="text" name="phone" id="phone" [(ngModel)]="ticket.phone">
+    </div>
+    <div class="form-group">
+      <label for="priority">Priority</label>
+      <select class="form-control" id="priority" name="priority" [(ngModel)]="ticket.priority" required>
+        <option class="form-control" *ngFor="let priority of priorities" [value]="priority">{{priority}}</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="subject">Subject</label>
+      <input class="form-control" type="text" name="subject" id="subject" [(ngModel)]="ticket.subject">
+    </div>
+    <div class="form-group">
+      <label for="description">Description</label>
+      <input class="form-control" type="text" name="description" id="description" [(ngModel)]="ticket.description">
+    </div>
+    <div class="form-group">
+      <label for="department">Department</label>
+      <input class="form-control" type="text" name="department" id="department" [(ngModel)]="ticket.department">
+    </div>
+    <div class="form-group">
+      <label for="createdBy">Created-By</label>
+      <input class="form-control" type="text" name="createdBy" id="createdBy" [(ngModel)]="ticket.createdBy">
+    </div>
+    <button class="btn btn-default" type="submit">Create</button>
+  </form>
+</section>

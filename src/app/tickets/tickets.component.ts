@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TicketsService } from './tickets.service';
+import { TicketsService } from '../shared/tickets.service';
 
 @Component({
   selector: 'app-tickets',
@@ -9,7 +9,7 @@ import { TicketsService } from './tickets.service';
 })
 export class TicketsComponent implements OnInit {
 
-  tickets: any[] = [];
+  tickets: any[];
 
   constructor(private ticketService: TicketsService) { }
 

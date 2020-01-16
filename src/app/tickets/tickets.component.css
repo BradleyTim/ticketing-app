@@ -9,8 +9,8 @@ section div {
     text-align: left;
     border: .5px solid rgb(230, 226, 226);
     border-radius: 4px;
-    background-color: rgb(243, 240, 240);
-    margin-bottom: .35rem;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: .55rem;
 }
 
 section h3 {
