@@ -31,3 +31,7 @@ button {
     color: white;
     background-color: #000;
 }
+
+button:disabled {
+    background-color: #777;
+}

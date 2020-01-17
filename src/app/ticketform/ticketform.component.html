@@ -59,6 +59,6 @@
         <span *ngIf="createdBy.errors.required">* Created-By is required</span>
       </span>
     </div>
-    <button class="btn btn-default" type="submit">Create</button>
+    <button class="btn btn-default" type="submit" (onClick)="onSubmit(); ticketForm.reset()" [disabled]="!ticketForm.form.valid">Create</button>
   </form>
 </section>
