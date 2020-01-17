@@ -14,17 +14,17 @@ export class TicketformComponent implements OnInit {
 
   @ViewChild('ticketForm') form: NgForm;
 
-  ticket = new Ticket(
-    0,
-    'ticket one',
-    'example@email.com',
-    '55555555',
-    'high',
-    'complaint',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    'marketing',
-    'someone'
-  );
+  ticket = {
+    id: 0,
+    name: 'ticket one',
+    email: 'example@email.com',
+    phone: '55555555',
+    priority: 'high',
+    subject: 'complaint',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    department: 'marketing',
+    createdBy: 'someone'
+  };
   
   tickets: any[];
   priorities: string[] = ['low', 'high', 'medium'];
