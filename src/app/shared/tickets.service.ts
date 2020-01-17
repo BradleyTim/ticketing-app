@@ -5,17 +5,21 @@ import { rootRenderNodes } from '@angular/core/src/view';
 @Injectable()
 export class TicketsService {
 
+  tickets: any[] = [];
+
   constructor() { }
 
   getTickets(): any[] {
-    console.log(localStorage.getItem('tickets'));
-    return localStorage.getItem('tickets') !== null ? JSON.parse(localStorage.getItem('tickets')) : [];
+    if (localStorage.getItem('tickets') == null) {
+      return this.tickets;
+    } else {
+      return this.tickets = JSON.parse(localStorage.getItem('tickets'));
+    }
   }
 
   setTickets(ticket: any): any[] {
-    console.log(this.getTickets());
-    localStorage.setItem('tickets', JSON.stringify(this.getTickets().push(ticket)));
-    return this.getTickets();
+    localStorage.setItem('tickets', JSON.stringify([ticket, ...this.tickets]));
+    return this.tickets;
   }
 
 }

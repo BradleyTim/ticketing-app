@@ -35,15 +35,12 @@ export class TicketformComponent implements OnInit {
     this.tickets = this.ticketService.getTickets();
   }
 
-  onSubmit(): any[] {
+  onSubmit(): void {
     // console.log(this.form);
     let id: number = 0;
     id = this.tickets.length + 1;
     const {name, email, phone, priority, subject, description, department, createdBy} = this.form.value;
-    // let list = [{id, name, email, phone, priority, subject, description, department, createdBy},...this.tickets];
-    // console.log(list);
-    // return this.tickets = list;
-    return this.tickets = this.ticketService.setTickets({ id, name, email, phone, priority, subject, description, department, createdBy })
+    this.ticketService.setTickets({ id, name, email, phone, priority, subject, description, department, createdBy })
   }
 
 }
